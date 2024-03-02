@@ -1,0 +1,326 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+}
+
+.container {
+  font-family: "Garamond", sans-serif;
+  padding: 0 300px;
+}
+
+.header {
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  padding: 40px 0;
+}
+.header__title {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-left: 180px;
+}
+.header__nav {
+  font-family: "Fira sans", sans-serif;
+  margin-right: 180px;
+}
+.header__nav-links {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+.header__nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 700;
+}
+.header__nav-links li::before {
+  content: "•";
+  font-weight: 1000;
+  display: inline-block;
+  width: 25px;
+}
+.header__nav-links-nodot::before {
+  content: "" !important;
+}
+
+.images {
+  margin-top: 50px;
+  display: flex;
+  margin-bottom: 200px;
+}
+.images__main-img {
+  margin-right: 20px;
+}
+.images__imgtext-block {
+  background-color: rgba(25, 25, 25, 0.05);
+  margin-bottom: 15px;
+  border-radius: 10px;
+  display: flex;
+  padding: 15px 80px 15px 15px;
+  align-items: center;
+}
+.images__imgtext-block p {
+  margin-left: 15px;
+  font-weight: 700;
+}
+
+.poster {
+  margin-bottom: 150px;
+}
+.poster__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.poster__title h2 {
+  font-size: 48px;
+}
+.poster__title-events {
+  display: flex;
+  align-items: center;
+}
+.poster__title-events img {
+  height: 50%;
+}
+.poster__title-events p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+.poster__blocks-block {
+  display: flex;
+  align-items: center;
+  background-color: rgba(25, 25, 25, 0.05);
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 70px;
+  position: relative;
+}
+.poster__blocks-block-date {
+  padding: 0 50px 0 20px;
+  text-align: center;
+}
+.poster__blocks-block-date h3 {
+  font-size: 64px;
+}
+.poster__blocks-block-date h4 {
+  font-size: 32px;
+}
+.poster__blocks-block img {
+  margin-right: 50px;
+}
+.poster__blocks-block-describe {
+  line-height: 1.5;
+}
+.poster__blocks-block-describe-title {
+  font-size: 25px;
+  max-width: 86%;
+  margin-bottom: 20px;
+}
+.poster__blocks-block-describe-text {
+  margin-bottom: 40px;
+  width: 90%;
+}
+.poster__blocks-block-describe-info {
+  display: flex;
+}
+.poster__blocks-block-describe-info-block2 {
+  height: 32px;
+  display: inline-flex;
+  margin-right: 25px;
+  align-items: center;
+}
+.poster__blocks-block-describe-info-block2 img {
+  margin-right: 15px;
+}
+.poster__blocks-block-describe-info-block2 span {
+  display: inline-block;
+}
+.poster__blocks-block-button {
+  background-color: rgb(5, 176, 147);
+  color: white;
+  border: none;
+  border-radius: 100px;
+  padding: 15px 20px;
+  font-weight: bold;
+  position: absolute;
+  right: 100px;
+}
+
+.newscont {
+  display: flex;
+}
+
+.news {
+  margin-bottom: 200px;
+  margin-right: 100px;
+}
+.news__title {
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+.news__blocks {
+  display: flex;
+}
+.news__blocks-block {
+  margin-right: 25px;
+}
+.news__blocks-block img {
+  margin-bottom: 30px;
+}
+.news__blocks-block h3 {
+  font-size: 18px;
+  max-width: 175px;
+  margin-bottom: 30px;
+}
+.news__blocks-block p {
+  max-width: 250px;
+}
+.news__calendar-img {
+  position: relative;
+}
+.news__calendar-img-title {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  padding: 30px;
+  font-size: 30px;
+  font-weight: normal;
+}
+.news__calendar-info {
+  display: flex;
+  background-color: rgba(25, 25, 25, 0.05);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 20px 20px;
+  justify-content: space-between;
+}
+.news__calendar-info-month {
+  margin-right: 50px;
+}
+.news__calendar-info-month h3 {
+  font-size: 25px;
+  margin-top: 5px;
+  margin-bottom: 130px;
+}
+.news__calendar-info-month-arrows {
+  display: flex;
+  justify-content: center;
+}
+.news__calendar-info-month-arrows-button {
+  height: 35px;
+  width: 35px;
+  background-color: rgb(5, 176, 147);
+  border: none;
+  border-radius: 7px;
+  margin-right: 5px;
+}
+.news__calendar-info-month-arrows-button img {
+  height: 30%;
+}
+.news__calendar-info-days-block ul {
+  list-style-type: none;
+  display: flex;
+  color: white;
+}
+.news__calendar-info-days-block ul .active {
+  background-color: rgb(5, 176, 147);
+}
+.news__calendar-info-days-block ul li {
+  margin: 2px 2px;
+  background-color: rgba(25, 25, 25, 0.3);
+  padding: 10px 14px;
+  border-radius: 5px;
+}
+
+.announcement {
+  margin-bottom: 200px;
+}
+.announcement__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.announcement__title-events {
+  display: flex;
+  align-items: center;
+}
+.announcement__title h2 {
+  font-size: 48px;
+}
+.announcement__title-events {
+  display: flex;
+  align-items: center;
+}
+.announcement__title-events img {
+  height: 50%;
+}
+.announcement__title-events p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+.announcement__info {
+  display: flex;
+  justify-content: space-between;
+}
+.announcement__info-block {
+  display: flex;
+  align-items: center;
+}
+.announcement__info-block-date {
+  padding-top: 25px;
+  text-align: center;
+  background-color: rgb(5, 176, 147);
+  color: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+.announcement__info-block-date h3 {
+  font-size: 25px;
+}
+.announcement__info-block-date span {
+  font-size: 15px;
+}
+.announcement__info-block-text {
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: space-around;
+  padding: 70px 200px;
+}
+.footer__block {
+  margin-right: 100px;
+}
+.footer__block-title {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.footer__block h4 {
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+.footer__block span {
+  display: inline-block;
+  margin-right: 15px;
+}
+.footer__block p {
+  margin-bottom: 20px;
+}/*# sourceMappingURL=style.css.map */
